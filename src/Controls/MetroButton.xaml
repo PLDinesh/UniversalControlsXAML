@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style x:Key="MetroButton"
+		   TargetType="{x:Type Button}">
+		<Setter Property="Foreground"
+				Value="{DynamicResource MetroControlForeground}" />
+		<Setter Property="Background"
+				Value="{DynamicResource MetroControlBackground}" />
+		<Setter Property="FontSize"
+				Value="16" />
+		<Setter Property="BorderThickness"
+				Value="0" />
+		<Setter Property="Height"
+				Value="30" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid Name="MetroButton">
+						<Border x:Name="Border"
+								Background="{TemplateBinding Background}"
+								BorderBrush="{TemplateBinding BorderBrush}"
+								BorderThickness="{TemplateBinding BorderThickness}"
+								Padding="{TemplateBinding Padding}" />
+						<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+										  Margin="{TemplateBinding Padding}"
+										  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+										  RecognizesAccessKey="True" />
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver"
+								 Value="true">
+							<Setter Property="BorderBrush"
+									Value="{DynamicResource MetroControlBorder}"
+									TargetName="Border" />
+							<Setter Property="BorderThickness"
+									Value="2"
+									TargetName="Border" />
+						</Trigger>
+						<Trigger Property="IsEnabled"
+								 Value="false">
+							<Setter Property="Foreground"
+									Value="{DynamicResource MetroControlDisabledText}" />
+						</Trigger>
+						<Trigger Property="IsPressed"
+								 Value="true">
+							<Setter Property="Background"
+									Value="{DynamicResource MetroControlBackgroundActive}" />
+							<Setter Property="BorderThickness"
+									Value="0"
+									TargetName="Border" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type Button}"
+		   BasedOn="{StaticResource MetroButton}" />
+</ResourceDictionary>

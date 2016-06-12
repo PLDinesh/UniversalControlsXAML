@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<SolidColorBrush x:Key="MetroColorAccent"
+					 Color="#B36FBC" />
+	<SolidColorBrush x:Key="MetroColorAccentLight"
+					 Color="#C79ACE" />
+	<SolidColorBrush x:Key="MetroColorAccentDark"
+					 Color="#881798" />
+</ResourceDictionary>

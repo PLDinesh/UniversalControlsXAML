@@ -1,0 +1,12 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroButton.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroCheckBox.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroSideBar.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroLabels.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
