@@ -1,20 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<Style TargetType="{x:Type ProgressBar}"
 		   x:Key="MetroProgressBar">
-		<Setter Property="Foreground">
-			<Setter.Value>
-				<LinearGradientBrush StartPoint="0,0"
-									 EndPoint="1,1">
-					<GradientStop Color="{DynamicResource MetroColorAccentDark}"
-								  Offset="0" />
-					<GradientStop Color="{DynamicResource MetroColorAccent}"
-								  Offset="0.5" />
-					<GradientStop Color="{DynamicResource MetroColorAccentLight}"
-								  Offset="1" />
-				</LinearGradientBrush>
-			</Setter.Value>
-		</Setter>
+		<Setter Property="Foreground"
+				Value="{DynamicResource MetroColorAccent}" />
 		<Setter Property="Background"
 				Value="{DynamicResource MetroControlBackground}" />
 		<Setter Property="BorderThickness"
