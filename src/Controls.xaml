@@ -5,8 +5,9 @@
 	<ResourceDictionary.MergedDictionaries>
 		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroButton.xaml" />
 		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroCheckBox.xaml" />
-		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroSideBar.xaml" />
 		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroLabels.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroProgressBar.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/UniversalControls;component/Controls/MetroSideBar.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
